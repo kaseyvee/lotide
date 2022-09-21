@@ -16,4 +16,20 @@ const eqArrays = function(array1, array2) {
   return valid;
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
+const without = function(original, removeMe) {
+  let newArr = [];
+  // iterate through original
+  for (let item of original) {
+    if (!removeMe.includes(item)) {
+      newArr.push(item);
+    }
+  }
+  return newArr;
+};
+
+const someArr = [1, 2, 3];
+assertArraysEqual(without(someArr, [1]), [2, 3]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
+
+// make sure orginal is not modified
+assertArraysEqual(someArr, [1, 2, 3]);
