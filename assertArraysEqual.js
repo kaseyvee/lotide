@@ -15,6 +15,8 @@ const eqArrays = function(array1, array2) {
         valid = false;
       }
     }
+  } else {
+    valid = false;
   }
   return valid;
 };
