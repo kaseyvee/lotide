@@ -7,22 +7,36 @@ const assertEqual = function(actual, expected) {
 };
 
 const tail = function(array) {
-  let newArr = [];
-  for (let i = 1; i < array.length; i++) {
-    newArr.push(array[i]);
-  }
+  if (array.length === 1 || array === [])
+    return [];
+
+  let newArr = array;
+  newArr.shift();
   return newArr;
 };
 
+
 // check that original array is unchanged
-const words = ["hi", "hello", "yo"];
-tail(words);
-assertEqual(words.length, 3);
+const words1 = ["hi", "hello", "yo"];
+assertEqual(words1.length, 3);
+assertEqual(words1[0], "hi");
 
 // check that returned elements are correct
-assertEqual(tail(words).length, 2);
-assertEqual(words[0], "hi");
-assertEqual(words[1], "hello");
+const result1 = tail(words1);
+assertEqual(result1.length, 2);
+assertEqual(result1[0], "hello");
+assertEqual(result1[1], "yo");
 
-// check returned elements
-console.log(tail(words));
+// only 1 item in array yields empty array
+const words2 = ["hello"];
+const result2 = tail(words2);
+assertEqual(result2.length, 0);
+assertEqual(result2[0], undefined);
+console.log(result2); // confirm empty
+
+// empty array yields empty array
+const words3 = [];
+const result3 = tail(words3);
+assertEqual(result3.length, 0);
+assertEqual(result3[0], undefined);
+console.log(result3); // confirm empty
