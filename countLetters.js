@@ -27,3 +27,6 @@ assertEqual(result["e"], 1);
 assertEqual(result["l"], 2);
 assertEqual(result["o"], 1);
 assertEqual(result["i"], 1);
+
+// visual check
+console.log(result);
