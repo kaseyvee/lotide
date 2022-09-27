@@ -9,29 +9,6 @@ const takeUntil = function(array, callback) {
   }
 };
 
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
-const eqArrays = function(array1, array2) {
-  let valid = true;
-
-  if (array1.length === array2.length) {
-    for (let i = 0; i < array1.length; i++) {
-      if (array1[i] !== array2[i]) {
-        valid = false;
-      }
-    }
-  } else {
-    valid = false;
-  }
-  return valid;
-};
-
 //const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 //const results1 = takeUntil(data1, x => x < 0);
 //console.log(results1);

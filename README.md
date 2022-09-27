@@ -24,7 +24,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 ## Documentation
 
-The following functions are currently implemented:
+The following functions are <u>currently</u> implemented:
 
 * `head`: return the <em>first item</em> of a given array
 * `tail`: return <em>everything except the first item</em> of a given array
@@ -33,8 +33,13 @@ The following functions are currently implemented:
 * `map`: return a <em>new array</em> given some array and the callback function to be applied to it
 * `takeUntil`: returns a <em>new array</em> given some array and a callback function that describes when to stop taking values (starting from index 0)
 * `without`: returns a <em>new array</em> given some array and another array with contents that are meant to be left out of the new array (from some array)
-* `flatten`: returns a <em>new array</em> with no nested arrays given some array with nested arrays (max 1 level of nesting)
 * `countLetters`: returns an <em>object</em> with letters as keys and how often they appear in a given string as values
-* `countOnly`: returns a <em>new object</em> given an array and an object with boolean values- true items are added to the new object and the number of their instances in the given array are values
 * `findKey`: returns the <em>key</em> of a given object that matches requirement given by the callback function
+
+The following functions are coming soon (maybe):
+
+* `flatten`: returns a <em>new array</em> with no nested arrays given some array with nested arrays (max 1 level of nesting)
+* `countOnly`: returns a <em>new object</em> given an array and an object with boolean values- true items are added to the new object and the number of their instances in the given array are values
 * `findKeyByValue`: returns the <em>key</em> of a given object by a given value
+* `eqObjects`: returns <em>boolean</em> by checking if 2 objects are equal
+* `eqArrays`: returns <em>boolean</em> by checking if 2 arrays are equal
