@@ -35,6 +35,7 @@ The following functions are <u>currently</u> implemented:
 * `without`: returns a <em>new array</em> given some array and another array with contents that are meant to be left out of the new array (from some array)
 * `countLetters`: returns an <em>object</em> with letters as keys and how often they appear in a given string as values
 * `findKey`: returns the first <em>key</em> of a given object that matches requirement given by the callback function
+* `eqArrays`: returns <em>boolean</em> by checking if 2 arrays are equal
 
 The following functions are coming soon (maybe):
 
@@ -42,4 +43,3 @@ The following functions are coming soon (maybe):
 * `countOnly`: returns a <em>new object</em> given an array and an object with boolean values- true items are added to the new object and the number of their instances in the given array are values
 * `findKeyByValue`: returns the <em>key</em> of a given object by a given value
 * `eqObjects`: returns <em>boolean</em> by checking if 2 objects are equal
-* `eqArrays`: returns <em>boolean</em> by checking if 2 arrays are equal

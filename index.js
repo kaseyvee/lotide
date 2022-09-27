@@ -14,7 +14,7 @@ const eqArrays = require('./eqArrays');
 const eqObjects = require('./eqObjects');
 
 
-const lotide = {
+const _ = {
   head,
   tail,
   middle,
@@ -31,4 +31,4 @@ const lotide = {
   eqObjects
 };
 
-module.exports = lotide;
+module.exports = _;
