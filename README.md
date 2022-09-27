@@ -34,7 +34,7 @@ The following functions are <u>currently</u> implemented:
 * `takeUntil`: returns a <em>new array</em> given some array and a callback function that describes when to stop taking values (starting from index 0)
 * `without`: returns a <em>new array</em> given some array and another array with contents that are meant to be left out of the new array (from some array)
 * `countLetters`: returns an <em>object</em> with letters as keys and how often they appear in a given string as values
-* `findKey`: returns the <em>key</em> of a given object that matches requirement given by the callback function
+* `findKey`: returns the first <em>key</em> of a given object that matches requirement given by the callback function
 
 The following functions are coming soon (maybe):
 
