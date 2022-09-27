@@ -20,13 +20,15 @@ const countLetters = function(sentence) {
   return output;
 };
 
-const result = countLetters("hello hi");
+//const result = countLetters("hello hi");
+//
+//assertEqual(result["h"], 2);
+//assertEqual(result["e"], 1);
+//assertEqual(result["l"], 2);
+//assertEqual(result["o"], 1);
+//assertEqual(result["i"], 1);
+//
+//// visual check
+//console.log(result);
 
-assertEqual(result["h"], 2);
-assertEqual(result["e"], 1);
-assertEqual(result["l"], 2);
-assertEqual(result["o"], 1);
-assertEqual(result["i"], 1);
-
-// visual check
-console.log(result);
+module.exports = countLetters;
