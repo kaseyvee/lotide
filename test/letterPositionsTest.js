@@ -1,27 +1,14 @@
 const assert = require('chai').assert;
 const lotide = require('../index');
 
-describe("#head", () => {
+describe("#letterPositions", () => {
 
-  it("returns 1 for [1, 2, 3]", () => {
-    assert.strictEqual(head([1, 2, 3]), 1);
+  it("returns {'h': [0], 'e': [1], 'l': [2, 3], 'o': [4]} for hello", () => {
+    assert.deepEqual(lotide.letterPositions("hello"), {'h': [0], 'e': [1], 'l': [2, 3], 'o': [4]});
   });
 
-  it("returns '5' for ['5']", () => {
-    assert.strictEqual(head(['5']), '5');
-  });
-  
-  it("returns 'Hello' for ['Hello', 'Lighthouse', 'Labs']", () => {
-    assert.strictEqual(head(["Hello", "Lighthouse", "Labs"]), 'Hello');
-  });
-
-  it("returns undefined for []", () => {
-    assert.strictEqual(head([]), undefined);
+  it("returns {'l': [0, 2], 'o': [1]} for lol", () => {
+    assert.deepEqual(lotide.letterPositions("lol"), {'l': [0, 2], 'o': [1]});
   });
   
 });
-
-//assertArraysEqual(result["h"], [0]);
-//assertArraysEqual(result["e"], [1]);
-//assertArraysEqual(result["l"], [2, 3]);
-//assertArraysEqual(result["o"], [4]);
