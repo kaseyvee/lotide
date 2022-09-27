@@ -16,7 +16,6 @@ const countLetters = function(sentence) {
       output[char] = 1;
     }
   }
-  console.log(output);
   return output;
 };
 
